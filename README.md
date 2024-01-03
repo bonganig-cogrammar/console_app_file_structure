@@ -1,4 +1,9 @@
-# Simple Version
+# IMPORTANT NOTES
+- It's important to note how input is handled at the highest level (closest to the user input) and the database connection is handled at the lowest level (closest to the database)
+- Note how we can reuse the database connection in different controllers but abstracting the database calls
+- Note how the database is opened and closed after each function
+
+## Simple Version
 This shows a simple way to break the code up
 
 `main.py`
@@ -12,7 +17,7 @@ This shows a simple way to break the code up
 `database_connection.py`
 - Directly connects to the database and performs the queries.
 
-# Full MVC
+## Full MVC
 This file breaks the files up further by adding views for each controller and models for each controller.
 
 `main.py`
